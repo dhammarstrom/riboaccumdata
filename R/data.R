@@ -98,6 +98,69 @@
 #'   }
 "ra_qpcr"
 
+#' Total RNA and muscle weight data
+#'
+#' @format A data frame with 1134 rows and 7 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{series}{Extraction series. A subset of participants had replicate tissue
+#'   samples extracted these are represented as 1 and 2 udner series}
+#'   \item{sample}{Sample identification number. Samples were randomly assigned
+#'   an id during RNA extraction and processing.}
+#'   \item{leg}{R, right; L, left}
+#'   \item{well}{Well for spectrophotometrical evaluation of RNA concentration}
+#'   \item{RNA}{Estimated total amount of RNA extracted from muscle samples (ng)}
+#'   \item{weight}{Muscle tissue weight (mg)}
+#' }
+"ra_totalrna"
+
+
+#' Tissue samples for RNA extraction
+#'
+#' @format A data frame with 269 rows and 6 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{leg}{R, right; L, left}
+#'   \item{time}{Sampling time-point. S0, before the intervention; S1 S4, S5,
+#'   S8, S9 and S12, 48 hours after sessions 1, 4, 5, 8, 9, and 12; post1w,
+#'   8 days after session 12; S1c 48 h control period; postctrl, 2-4 week control
+#'   period}
+#'   \item{series}{Extraction series. A subset of participants had replicate tissue
+#'   samples extracted these are represented as 1 and 2 udner series}
+#'   \item{sample}{Sample identification number. Samples were randomly assigned
+#'   an id during RNA extraction and processing.}
+#'   \item{cond}{Experimental condition}
+#' }
+"ra_tissuesamples"
+
+
+#' Ribosome accumulation study: Exercise training data
+#'
+#'
+#' Resistance training was performed for the lower extremities using unilateral
+#' leg extension. The load was adopted to reach the target number of repetitions.
+#'
+#'
+#' @format A data frame with 1578 rows and 9 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{session}{Session number (1-12)}
+#'   \item{week}{Training week number (1-3)}
+#'   \item{leg}{R, right; L, left}
+#'   \item{set}{Set number}
+#'   \item{repetitions}{Number of repetitions in set}
+#'   \item{load}{External load in each set (kg)}
+#'   \item{set_load}{Total volume in each set, number of repetitions multipled with load}
+#' }
+"ra_training"
+
+
+
+
+
+
+
+
 
 
 
