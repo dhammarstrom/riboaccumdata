@@ -155,10 +155,55 @@
 "ra_training"
 
 
+#' Ribosome accumulation study: Strength testing data
+#'
+#'
+#' Strength tests were performed before the intervention in
+#' two independent sessions. During one of the sessions two
+#' attempts were given for each test resulting in three
+#' measured attempts.
+#'
+#'
+#' @format A data frame with 172 rows and 7 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{time}{Time-point for strength measurement. In the control group
+#'   (`cond == ctrl_leg`), strength was measured before (baseline) and
+#'   after the control period (`post_ctrl`). In the experimental
+#'   group strength was measured before and after the intervention (`baseline`,
+#'   `post`), and after the 8 day de-training period (`post1w`)}
+#'   \item{leg}{R, right; L, left}
+#'   \item{cond}{Experimental condition}
+#'   \item{isok}{Knee extension Isokinetic torque at 60 degree per second}
+#'   \item{isom}{Knee extension isometric torque}
+#' }
+"ra_strength"
 
 
-
-
+#' Ribosome accumulation study: Muscle thickness
+#'
+#' Muscle thickness of m. vastus lateralis was measured using
+#' a B-mode ultra sound device (SmartUS EXT-1M, telemed, Vilnius, Lithuania)
+#' using a 39 mm, 12 MHz probe. The probe was placed perpendicular to a site
+#' located 60% of the distance between Spina Iliac Anterior Superior and
+#' the lateral femur condyle. Transmission gel was applied an care was taken not
+#' to pressing the skin. The thickness measurement (mm) is the average of
+#' three digital measurements (ImageJ Fiji).
+#'
+#'
+#' @format A data frame with 98 rows and 5 variables:
+#' \describe{
+#'   \item{participant}{participant identification}
+#'   \item{time}{Time-point for ultra sound measurements (US). In the control group
+#'   (`cond == ctrl_leg`), US was measured before (baseline) and
+#'   after the control period (`post_ctrl`). In the experimental
+#'   group US was measured before and after the intervention (`baseline`,
+#'   `post`), and after the 8 day de-training period (`post1w`)}
+#'   \item{leg}{R, right; L, left}
+#'   \item{cond}{Experimental condition}
+#'   \item{thickness}{Vastus lateralis muscle thickness (mm)}
+#' }
+"ra_us"
 
 
 
